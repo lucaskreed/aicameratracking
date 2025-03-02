@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Camera Tracking System by Lucas Reed: Real-time object tracking using Arduino, Python, and AI with 360-degree camera rotation.">
+    <meta name="keywords" content="AI Camera Tracking, Arduino, Python, Object Tracking, AI, Camera System, Surveillance, Robotics">
+    <title>AI Camera Tracking System - Lucas Reed</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 0;
+            background-color: #f5f7f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #34495e;
+        }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 18px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 850px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        img {
+            width: 100%;
+            max-width: 850px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .content-section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="https://lucasreed1.github.io/gallery/" class="back-button">← Back to Projects</a>
+        <h1>AI Camera Tracking System</h1>
+
+        <div class="content-section">
+            <h2>Project Overview</h2>
+            <p><strong>Purpose:</strong> The AI Camera Tracking System I designed offers an intelligent solution for real-time object tracking using camera vision and AI. By integrating an Arduino Uno for hardware control and Python for AI processing, the system can dynamically track moving objects with high precision and minimal delay. This system is ideal for various applications such as event filming, automated tasks, robotics, and surveillance. The tracking system is compatible with any type of camera, including computers, phones, and other devices, making it highly versatile across different use cases.</p>
+            
+            <p><strong>Design:</strong> For testing, I mounted the camera on a stable frame made from K'nex parts. This setup allows for easy customization and secure positioning of the camera. A motor was then incorporated to enable full 360-degree rotation, ensuring the camera can seamlessly follow the tracked object, regardless of its movement. This feature is especially useful for tracking fast-moving objects, whether they are confined to a small area or spread out across a larger space, ensuring continuous and smooth tracking.</p>
+            
+            <p><strong>AI Model:</strong> The AI model processes video data in real-time, continuously analyzing the movement of the object being tracked. This eliminates the need for manual adjustments, increasing efficiency in scenarios requiring continuous tracking. Additionally, the system allows for easy integration with other components, providing flexibility for further customization based on specific user needs or environmental conditions.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>System Components</h2>
+            <p><strong>Technologies Used:</strong></p>
+            <ul>
+                <li><strong>Arduino Uno:</strong> Used to control servo motors for precise camera positioning and camera movement via motor.</li>
+                <li><strong>Python:</strong> Handles the AI processing, object recognition, and directs Arduino to adjust camera position.</li>
+                <li><strong>AI Model:</strong> A custom-trained AI model, possibly using TensorFlow or OpenCV, processes real-time video for object tracking.</li>
+                <li><strong>Camera Module:</strong> Captures live video for AI object detection and movement tracking.</li>
+                <li><strong>Motor:</strong> Provides full 360-degree rotation of the camera, ensuring no subject movement is missed.</li>
+                <li><strong>Knex Parts:</strong> Used to create a stable and adjustable camera mount, ensuring a customizable, durable framework for the system.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>References</h2>
+            <ul>
+                <li><a href="https://www.arduino.cc/" target="_blank">Arduino Official Website</a></li>
+                <li><a href="https://www.opencv.org/" target="_blank">OpenCV (Computer Vision Library)</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2025 Lucas Reed. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
